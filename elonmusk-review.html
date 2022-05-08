@@ -1,0 +1,40 @@
+<head>
+  <title>Rate @elonmusk</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <h1>Please rate <a href="https://twitter.com/elonmusk/">@elonmusk</a></h1>
+
+  <form id="rating" {{ anyChecked }}>
+      <div>
+          <label for="one-musk"><span>1</span></label>
+          <input type="radio" name="rating" value="1" id="one-musk" {{ checked 1 }} />
+          <label for="two-musk"><span>2</span></label>
+          <input type="radio" name="rating" value="2" id="two-musk" {{ checked 2 }} />
+          <label for="three-musk"><span>3</span></label>
+          <input type="radio" name="rating" value="3" id="three-musk" {{ checked 3 }} />
+          <label for="four-musk"><span>4</span></label>
+          <input type="radio" name="rating" value="4" id="four-musk" {{ checked 4 }} />
+          <label for="five-musk"><span>5</span></label>
+          <input type="radio" name="rating" value="5" id="five-musk" {{ checked 5 }} />
+      </div>
+      <input type="submit" id="submit" value="Submit" disabled />
+  </form>
+
+  <div id="chart">
+    <h2>Average rating over time</h2>
+  </div>
+
+  <footer>
+    <ul>
+      <li><a href="/api/ratings/csv">CSV</a></li>
+      <li><a href="/api/ratings">JSON</a></li>
+      <li><a href="/api/ratings/xml">XML</a></li>
+      <li><a href="https://github.com/nickufier/elonmusk-review/blob/master/api.md">API</a></li>
+      <li><a href="https://github.com/nickufier/elonmusk-review/blob/master/LICENSE.txt">No Copyright</a></li>
+      <li><a href="https://github.com/nickufier/elonmusk-review">Source</a></li>
+    </ul>
+  </footer>
+</body>

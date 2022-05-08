@@ -114,7 +114,7 @@ if (Meteor.isClient) {
       .attr('height', markerSize)
       .attr('x', -markerSize / 2)
       .attr('y', -markerSize / 2)
-      .attr('xlink:href', '/images/justgrimes.svg');
+      .attr('xlink:href', '/images/elonmusk.svg');
 
     var enterBadges = enterMarkers.append('g')
       .attr('class', 'badge');
@@ -263,7 +263,7 @@ if (Meteor.isServer) {
       } else {
         return { statusCode: 400, body: {
           status: 'error',
-          message: 'Bad request: justgrimes must be rated with a whole number between 1 and 5'
+          message: 'Bad request: elonmusk must be rated with a whole number between 1 and 5'
         } };
       }
     }
