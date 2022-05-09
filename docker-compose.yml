@@ -12,6 +12,7 @@ services:
       - VIRTUAL_HOST=elonmusk.review
       - LETSENCRYPT_HOST=elonmusk.review
       - LETSENCRYPT_SINGLE_DOMAIN_CERTS=true
+      - METEOR_ALLOW_SUPERUSER=true
     links:
       - db
     expose:
@@ -45,7 +46,7 @@ services:
       - nginx-proxy
     volumes:
       - certs:/etc/nginx/certs:rw
-      - acme:/etc/acme.sh
+      - acme:/etc/acme.sh:rw
       - /var/run/docker.sock:/var/run/docker.sock:ro
 
 volumes:
@@ -54,3 +55,4 @@ volumes:
   html:
   certs:
   acme:
+
