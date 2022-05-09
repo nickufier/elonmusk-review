@@ -114,7 +114,7 @@ if (Meteor.isClient) {
       .attr('height', markerSize)
       .attr('x', -markerSize / 2)
       .attr('y', -markerSize / 2)
-      .attr('xlink:href', '/images/elonmusk.svg');
+      .attr('xlink:href', '/images/elonmusk.png');
 
     var enterBadges = enterMarkers.append('g')
       .attr('class', 'badge');
@@ -251,6 +251,8 @@ if (Meteor.isClient) {
       document.getElementById('submit').disabled = false;
     }
   });
+  
+  document.write('<link rel="stylesheet" type="text/css" href="raster.css" />');
 }
 
 if (Meteor.isServer) {

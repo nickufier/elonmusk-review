@@ -1,0 +1,9 @@
+label {
+    background: url('images/background.png') !important;
+    background-size: contain !important;
+}
+
+label:after {
+    background: url('images/elonmusk.png')!important;
+    background-size: contain !important;
+}
